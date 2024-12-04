@@ -23,6 +23,7 @@ a {
 
 img {
     display: block;
+    width: 100%;
 }
 
 
@@ -802,8 +803,84 @@ button:focus, button:hover {
     margin-bottom: 24px;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
+@media(min-width:320px) and (max-width:767px){
+
+    .list-rules,
+    .list-team,
+    .list-portfolio,
+    .container-footer {
+       flex-direction: column;
+       flex-wrap: wrap;
+       gap: 72px;
+       align-items: center;
+    }
+
+    .section,
+    .section-team,
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .item-rules {
+    width: calc((100% - 72px) / 1);
+}
+    .icon-section,
+    .list-menu,
+    .contacts-list
+    {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-rules-list {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+ .main-title{
+    padding-top: 72px;
+    padding-bottom: 72px;
+ }
+
+ .page-title {
+    font-size: 36px;
+    line-height: 1.2;
+    max-width: 216px;
+    margin-bottom: 72px;
+ }
+
+ .item-portfolio {
+   width: 288px;
+   height: 400px;
+ }
+ 
+ .footer {
+    height: 664px;
+ }
+ .logo-wrapper,
+ .footer-subscribe-title{
+    margin: 0;
+ }
+ .logo-footer,
+ .link-title {
+    text-align: center;
+ }
+
+ .subscribe-form {
+    margin: 0px;
+    flex-direction: column;
+    gap: 16px;
+ }
+
 }
