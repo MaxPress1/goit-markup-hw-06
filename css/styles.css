@@ -849,7 +849,7 @@ button:focus, button:hover {
 
 .icon-list-footer {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     gap:16px;
 }
 
